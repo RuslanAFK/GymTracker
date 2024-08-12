@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymTracker.Backend.Api", "GymTracker.Backend.Api\GymTracker.Backend.Api.csproj", "{1BEFF951-6D88-4C87-885B-64AD686E9EDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymTracker.Backend.Logic", "GymTracker.Backend.Logic\GymTracker.Backend.Logic.csproj", "{96D34024-5FE6-4E8C-A41D-5B16889F1F13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymTracker.Backend.Data", "GymTracker.Backend.Data\GymTracker.Backend.Data.csproj", "{AEF8FF63-46D9-4F19-A532-3B818E3F29D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BEFF951-6D88-4C87-885B-64AD686E9EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BEFF951-6D88-4C87-885B-64AD686E9EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BEFF951-6D88-4C87-885B-64AD686E9EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BEFF951-6D88-4C87-885B-64AD686E9EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D34024-5FE6-4E8C-A41D-5B16889F1F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D34024-5FE6-4E8C-A41D-5B16889F1F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D34024-5FE6-4E8C-A41D-5B16889F1F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D34024-5FE6-4E8C-A41D-5B16889F1F13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEF8FF63-46D9-4F19-A532-3B818E3F29D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF8FF63-46D9-4F19-A532-3B818E3F29D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF8FF63-46D9-4F19-A532-3B818E3F29D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF8FF63-46D9-4F19-A532-3B818E3F29D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
