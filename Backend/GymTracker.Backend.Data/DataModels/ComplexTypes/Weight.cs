@@ -3,8 +3,7 @@ using GymTracker.Backend.Data.Enums;
 
 namespace GymTracker.Backend.Data.DataModels.ComplexTypes;
 
-[ComplexType]
-public class Weight
+public struct Weight
 {
     public long Value { get; set; }
     public WeightUnit Unit { get; set; }

@@ -1,6 +1,6 @@
-﻿namespace GymTracker.Backend.Logic.ViewModels.Exercise;
+﻿namespace GymTracker.Backend.Logic.ViewModels.Exercises;
 
-public class ExerciseUpdateModel
+public class ExerciseViewModel
 {
     public Guid Id { get; set; }
     public string Name { get; set; }

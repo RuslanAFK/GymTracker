@@ -1,13 +1,15 @@
-﻿namespace GymTracker.Backend.Logic.ViewModels.Exercise;
+﻿using GymTracker.Backend.Data.DataModels;
+
+namespace GymTracker.Backend.Logic.ViewModels.Exercises;
 
 public class ExerciseCreateModel
 {
     public string Name { get; set; }
     public string? Description { get; set; }
 
-    public Data.DataModels.Exercise ToEntity()
+    public Exercise ToEntity()
     {
-        return new Data.DataModels.Exercise()
+        return new Exercise()
         {
             Description = Description, Name = Name
         };

@@ -1,6 +1,6 @@
 ﻿using GymTracker.Backend.Data.Repositories.Abstract;
 using GymTracker.Backend.Logic.Services.Abstract;
-using GymTracker.Backend.Logic.ViewModels.Exercise;
+using GymTracker.Backend.Logic.ViewModels.Exercises;
 using Microsoft.EntityFrameworkCore;
 
 namespace GymTracker.Backend.Logic.Services.Concrete;

@@ -1,4 +1,4 @@
-﻿using GymTracker.Backend.Logic.ViewModels.Exercise;
+﻿using GymTracker.Backend.Logic.ViewModels.Exercises;
 
 namespace GymTracker.Backend.Logic.Services.Abstract;
 
