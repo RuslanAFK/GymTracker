@@ -14,6 +14,8 @@ public class RecordConfiguration : IEntityTypeConfiguration<Record>
         builder.HasKey(x => x.Id);
         builder.Property(x => x.Id).HasValueGenerator<GuidValueGenerator>();
 
+        builder.Property(x => x.Description).HasMaxLength(256);
+
         builder.Property(x => x.Weight).HasConversion(
             x => JsonConvert.SerializeObject(x),
             x => JsonConvert.DeserializeObject<Weight>(x));

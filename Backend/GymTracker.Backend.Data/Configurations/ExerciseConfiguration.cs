@@ -11,6 +11,9 @@ public class ExerciseConfiguration : IEntityTypeConfiguration<Exercise>
     {
         builder.HasKey(x => x.Id);
         builder.Property(x => x.Id).HasValueGenerator<GuidValueGenerator>();
+        
+        builder.Property(x => x.Description).HasMaxLength(256);
+        builder.Property(x => x.Name).HasMaxLength(64);
 
         builder.HasIndex(x => x.Name).IsUnique();
     }
