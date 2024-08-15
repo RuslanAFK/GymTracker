@@ -9,5 +9,10 @@
     <ItemGroup>
       <ProjectReference Include="..\GymTracker.Backend.Data\GymTracker.Backend.Data.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Providers\Abstract\" />
+      <Folder Include="Providers\Concrete\" />
+    </ItemGroup>
     
 </Project>

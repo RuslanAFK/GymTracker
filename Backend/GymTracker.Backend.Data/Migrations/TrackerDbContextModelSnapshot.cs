@@ -45,7 +45,7 @@ namespace GymTracker.Backend.Data.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Exercise");
+                    b.ToTable("Exercise", (string)null);
                 });
 
             modelBuilder.Entity("GymTracker.Backend.Data.DataModels.Record", b =>
@@ -75,7 +75,7 @@ namespace GymTracker.Backend.Data.Migrations
 
                     b.HasIndex("ExerciseId");
 
-                    b.ToTable("Record");
+                    b.ToTable("Record", (string)null);
                 });
 
             modelBuilder.Entity("GymTracker.Backend.Data.DataModels.Record", b =>

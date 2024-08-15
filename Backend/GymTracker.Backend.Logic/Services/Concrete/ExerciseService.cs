@@ -46,4 +46,6 @@ public class ExerciseService(IExerciseRepository exerciseRepository) : IExercise
         
         return exercises;
     }
+    
+    // TODO: GetDetails
 }

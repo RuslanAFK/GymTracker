@@ -1,9 +1,10 @@
 ﻿using GymTracker.Backend.Data.Repositories.Abstract;
+using GymTracker.Backend.Logic.Services.Abstract;
 using GymTracker.Backend.Logic.ViewModels.Records;
 
 namespace GymTracker.Backend.Logic.Services.Concrete;
 
-public class RecordService(IRecordRepository recordRepository)
+public class RecordService(IRecordRepository recordRepository) : IRecordService
 {
     public Task CreateRecord(RecordCreateModel model)
     {
@@ -34,5 +35,14 @@ public class RecordService(IRecordRepository recordRepository)
         
         recordRepository.Remove(record);
         await recordRepository.SaveChangesAsync();
+    }
+    
+    public async Task<RecordDetailsModel> GetRecordDetails(Guid id)
+    {
+        var record = await recordRepository.GetByIdAsync(id);
+        if (record is null)
+            throw new Exception("Record not found");
+
+        return RecordDetailsModel.CreateFromEntity(record);
     }
 }
